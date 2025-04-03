@@ -1,11 +1,14 @@
 CREATE OR REPLACE FUNCTION get_sequence_name(tname text, cname text) RETURNS text AS $$
 BEGIN
-    RETURN (SELECT pg_get_serial_sequence(tname, cname));
+    -- This concatenation trickery is only here to support the `Lives` table (uppercase name)...
+    RETURN (SELECT pg_get_serial_sequence('"' || tname || '"', cname));
 EXCEPTION
     WHEN undefined_column THEN
         RETURN NULL;
 END;
 $$ LANGUAGE plpgsql;
+
+
 
 SELECT
     tc.table_name,
