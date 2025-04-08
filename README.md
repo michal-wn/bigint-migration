@@ -10,4 +10,6 @@ These ready-to-go `ALTER` scripts generated based on both scripts' outputs are i
 * `alter-primary-keys.sql`
 * `alter-foreign-keys.sql`
 
+The `dev` directory contains changes used to test in dev (update sequences to `int4 + 1` and revert).
+
 Also, raw output is included too in a subdirectory.
