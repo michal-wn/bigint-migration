@@ -117,8 +117,6 @@ ALTER TABLE intakes ALTER COLUMN listing_id TYPE bigint;
 ALTER TABLE intakes ALTER COLUMN order_item_id TYPE bigint;
 ALTER TABLE intakes ALTER COLUMN shipment_id TYPE bigint;
 ALTER TABLE intakes ALTER COLUMN user_id TYPE bigint;
-ALTER TABLE invoice_line_items ALTER COLUMN invoice_id TYPE bigint;
-ALTER TABLE invoice_line_items ALTER COLUMN parent_line_item_id TYPE bigint;
 ALTER TABLE invoice_reports ALTER COLUMN seller_id TYPE bigint;
 ALTER TABLE invoices ALTER COLUMN user_id TYPE bigint;
 ALTER TABLE item_disputes ALTER COLUMN order_item_id TYPE bigint;

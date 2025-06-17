@@ -77,9 +77,6 @@ ALTER SEQUENCE public.videos_id_seq AS bigint;
 ALTER TABLE order_records ALTER COLUMN id TYPE bigint;
 ALTER SEQUENCE public.order_records_id_seq AS bigint;
 
-ALTER TABLE invoice_line_items ALTER COLUMN id TYPE bigint;
-ALTER SEQUENCE public.invoice_line_items_id_seq AS bigint;
-
 ALTER TABLE ledger_transactions ALTER COLUMN id TYPE bigint;
 ALTER SEQUENCE public.ledger_transactions_id_seq AS bigint;
 
