@@ -116,9 +116,6 @@ ALTER SEQUENCE public.shipping_profiles_id_seq AS bigint;
 ALTER TABLE page_views ALTER COLUMN id TYPE bigint;
 ALTER SEQUENCE public.page_views_id_seq AS bigint;
 
-ALTER TABLE vods_view ALTER COLUMN id TYPE bigint;
-ALTER SEQUENCE public.vods_view_id_seq AS bigint;
-
 ALTER TABLE entity_relationships ALTER COLUMN id TYPE bigint;
 ALTER SEQUENCE public.entity_relationships_id_seq AS bigint;
 
@@ -356,9 +353,6 @@ ALTER SEQUENCE public.loyalty_reward_definition_id_seq AS bigint;
 ALTER TABLE ts_violations ALTER COLUMN id TYPE bigint;
 ALTER SEQUENCE public.ts_violations_id_seq AS bigint;
 
-ALTER TABLE listing_bpo_review_record ALTER COLUMN id TYPE bigint;
-ALTER SEQUENCE public.listing_bpo_review_record_id_seq AS bigint;
-
 ALTER TABLE classifier_values ALTER COLUMN id TYPE bigint;
 ALTER SEQUENCE public.classifier_values_id_seq AS bigint;
 
@@ -494,9 +488,6 @@ ALTER SEQUENCE public.auto_action_state_id_seq AS bigint;
 ALTER TABLE automated_message_settings ALTER COLUMN id TYPE bigint;
 ALTER SEQUENCE public.automated_message_settings_id_seq AS bigint;
 
-ALTER TABLE bid_without_payment_info ALTER COLUMN id TYPE bigint;
-ALTER SEQUENCE public.bid_without_payment_info_id_seq AS bigint;
-
 ALTER TABLE buyer_livestream_shipping_settings ALTER COLUMN id TYPE bigint;
 ALTER SEQUENCE public.buyer_livestream_shipping_settings_id_seq AS bigint;
 
@@ -518,9 +509,6 @@ ALTER SEQUENCE public.localization_preferences_id_seq AS bigint;
 ALTER TABLE new_seller_group_conversation ALTER COLUMN id TYPE bigint;
 ALTER SEQUENCE public.new_seller_group_conversation_id_seq AS bigint;
 
-ALTER TABLE offers ALTER COLUMN id TYPE bigint;
-ALTER SEQUENCE public.offers_id_seq AS bigint;
-
 ALTER TABLE paid_coupon_data ALTER COLUMN id TYPE bigint;
 ALTER SEQUENCE public.paid_coupon_data_id_seq AS bigint;
 
@@ -538,9 +526,6 @@ ALTER SEQUENCE public.premier_shop_evaluations_id_seq AS bigint;
 
 ALTER TABLE product_videos ALTER COLUMN id TYPE bigint;
 ALTER SEQUENCE public.product_videos_id_seq AS bigint;
-
-ALTER TABLE raffle_drop_entry_orders ALTER COLUMN id TYPE bigint;
-ALTER SEQUENCE public.raffle_drop_entry_orders_id_seq AS bigint;
 
 ALTER TABLE referral_challenge_milestone_progress ALTER COLUMN id TYPE bigint;
 ALTER SEQUENCE public.referral_challenge_milestone_progress_id_seq AS bigint;
@@ -605,9 +590,6 @@ ALTER SEQUENCE public.stripe_early_fraud_warning_id_seq AS bigint;
 ALTER TABLE taxonomy_cron_job ALTER COLUMN id TYPE bigint;
 ALTER SEQUENCE public.taxonomy_cron_job_id_seq AS bigint;
 
-ALTER TABLE ts_decision_rules ALTER COLUMN id TYPE bigint;
-ALTER SEQUENCE public.ts_decision_rules_id_seq AS bigint;
-
 ALTER TABLE ts_email_template ALTER COLUMN id TYPE bigint;
 ALTER SEQUENCE public.ts_email_template_id_seq AS bigint;
 
@@ -624,7 +606,6 @@ ALTER TABLE ts_versioned_violations ALTER COLUMN id TYPE bigint;
 ALTER SEQUENCE public.ts_versioned_violations_id_seq AS bigint;
 
 ALTER TABLE user_profiles ALTER COLUMN id TYPE bigint;
-ALTER SEQUENCE public.user_profiles_id_seq AS bigint;
 
 -- Added manually
 ALTER TABLE "Lives" ALTER COLUMN id TYPE bigint;
